@@ -7,7 +7,7 @@ tutorials, videos, and gamified exercises for learners of all levels. The platfo
 engagement and cultural understanding. Through its user-friendly interface and adaptive learning 
 features, Silent Speak aims to enhance communication inclusivity and empower users to express 
 themselves fluently in sign language. 
-
+ 
 ## 📌 Features
 
 - 🔐 User Login & Signup
