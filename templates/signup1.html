@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp-SilentSpeak</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <h1>SilentSpeak</h1>
+        <h2>Create Account</h2>
+        <form action="" method="POST">
+            <label for="name">
+                Name:
+            </label>
+          <input type="text"
+                 id="name"
+                 name="name"
+                 placeholder="Enter your Name" required>
+
+            <label for="first">
+                  Username:
+              </label>
+            <input type="text"
+                   id="first"
+                   name="username"
+                   placeholder="Enter your Username" required>
+            
+                   <label for="email">
+                    Email:
+                </label>
+              <input type="text"
+                     id="email"
+                     name="emailid"
+                     placeholder="Enter your Email" required>
+
+
+            <label for="password">
+                  Password:
+              </label>
+            <input type="password"
+                   id="password"
+                   name="password"
+                   placeholder="Enter your Password" required>
+
+            <label for="confirm">
+                    Confirm Password:
+                </label>
+            <input type="text"
+                     id="confirm"
+                     name="confirm"
+                     placeholder="Confirm your Password" required>
+ 
+            <div class="wrap">
+                <button type="submit"><a href="/" onclick= "alert('Sign up Successfull')"> Submit </a>
+                </button>
+            </div>
+        </form>
+          <a class="close" href="/">
+              <i style="font-size:24px" class="fa">&#xf00d;</i></a>
+          
+    </div>
+</body>
+</html>

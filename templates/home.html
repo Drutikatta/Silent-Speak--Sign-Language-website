@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="img" href="../static/pics/silentspeak.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-SilentSpeak</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+
+    <img src="../static/pics/silentspeak.png" class="company-name">
+
+    <div class="pages">
+      <b><a href="/" class="page1">
+          <li>Home</li>
+        </a>
+        <a href="/learning" class="page2">
+          <li>Learning</li>
+        </a>
+        <a href="/history" class="page3">
+          <li>History</li>
+        </a>
+        <a href="/dictionary" class="page4">
+          <li>Dictionary</li>
+        </a>
+        <a href="/about" class="page5">
+          <li>About Us</li>
+        </a></b>
+
+    </div>
+    <div class="search-login">
+      <div class="su-box su-box-style-default" id="" style="border-color:#00378b;border-radius:0px">
+        <div class="su-box-title"
+          style="background-color:#016abe;color:#FFFFFF;border-top-left-radius:0px;border-top-right-radius:0px"></div>
+        <div class="su-box-content su-u-clearfix su-u-trim"
+          style="border-bottom-left-radius:0px;border-bottom-right-radius:0px">
+          <form data-min-no-for-search="1" data-result-box-max-height="400" data-form-id="5791"
+            class="is-search-form is-form-style is-form-style-1 is-form-id-5791 is-ajax-search"
+            action="https://indiansignlanguage.org/" method="get" role="search">
+            <label for="is-search-input-5791">
+              <input type="search" id="is-search-input-5791" name="s" value="" class="is-search-input"
+                placeholder="Search Indian Sign Language here......" autocomplete="off"
+                style="z-index: 10; position: relative; background-color: rgb(217, 238, 255);">
+              <span class="is-loader-image"
+                style="background-image: url(https://indiansignlanguage.org/wp-content/plugins/add-search-to-menu/public/images/spinner.gif); right: 86.1125px; display: none;"></span></label><input
+              type="submit" value="SEARCH" class="is-search-submit">
+            <input type="hidden" name="id" value="5791">
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn" style="font-size: 50px;"><i style="font-size:50px"
+          class="fa">&#xf2be;</i>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="/login">Login</a>
+          <a href="/signup">Sign up</a>
+        </div>
+    </div>
+  </nav>
+
+  <div class="ss">
+    <b>
+      <h1>Silentspeak</h1>
+    </b>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="../static/pics/ss1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="../static/pics/ss2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="../static/pics/ss3.jpg" style="width:100%">
+    </div>
+
+  </div>
+
+  <section class="first">
+    <div class="first-content">
+      <div class="inf">
+        <h1>Learn through video lectures</h1><br>
+        <p>
+          Video lectures offer an effective learning method, combining visual and auditory cues for better
+          understanding. They allow for self-paced learning
+        </p><br>
+        <div>
+          <button class="btn1"><a href="/learning">Learn</a></button>
+          <button class="btn2"><a href="/dictionary">Explore</a></button>
+        </div>
+      </div>
+      <div class="image">
+        <img src="../static/pics/laptop cover.png" alt="">
+        <iframe width="600" height="400"
+          src="https://www.youtube.com/embed/xwGHOUcnnHU?autohide=2&amp;autoplay=1&amp;mute=0&amp;controls=1&amp;fs=1&amp;loop=1&amp;modestbranding=0&amp;playlist=xwGHOUcnnHU&amp;rel=0&amp;showinfo=1&amp;theme=dark&amp;wmode=&amp;playsinline=1"
+          frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media; picture-in-picture; loop; muted"
+          title=""></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="second">
+    <div class="history">
+      <img src="../static/pics/history-1.jpg" width="300" height="240">
+      <div class="inf2">
+        <h1>History – Indian Sign Language Dictionary</h1><br>
+        <p>
+          Uncover the rich history and cultural heritage of Indian Sign Language. Explore its roots in ancient Indian
+          traditions and its evolution into a unique form of communication. Discover the influence of diverse regional
+          dialects on its development.
+        </p>
+        <div class="explore">
+          <button><a href="/history">Explore More</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h1 class="hd1">Importance of Sign Language </h1>
+  <p class="para1">Sign languages are languages that use the visual-manual modality to convey meaning, instead of spoken
+    words. Sign languages are expressed through manual expression in combination with non-manual markers. Sign languages
+    are full-fledged natural languages with their own grammar and conditions. Sign languages are not universal and are
+    usually not mutually understandable, although there are also similarities among different sign languages.</p>
+
+  <h1 class="hd2">Indian Sign Language (ISL) </h1>
+  <p class="para2"> ISL is primarily used by members of the deaf community in India to communicate with each other and
+    with hearing individuals who have learned the language. It serves as a means of inclusive communication and cultural
+    expression. ISL plays a vital role in education for deaf individuals in India. It is used in schools and colleges to
+    facilitate learning and communication. Additionally, sign language interpreters are employed to facilitate
+    communication between deaf and hearing individuals in various settings.</p>
+
+  <div>
+    <img class="img-para1" src="../static/pics/ss4.jpg">
+    <img class="img-para2" src="../static/pics/ss5.jpg">
+    <img class="img-para3" src="../static/pics/ss6.jpg">
+    <img class="img-para4" src="../static/pics/ss7.jpg">
+  </div>
+  <div class="footer">
+    <br>
+    <h4 style="color: #f18b59; margin-left: 60px;">Expand your world learn a sign each day</h4>
+    <div class="footer1">
+
+      <b><a href="/about">About</a><br>
+        <a href="/learning">Learning</a>
+        <a href="/beg">Beginner</a>
+        <a href="/inter">Intermediate</a>
+        <a href="/advan">Advanced</a><br>
+        <a href="/dictionary">Dictionary</a><br><br> <br>
+      </b>
+      <h3> @Copyright</h3>
+    </div>
+    <div class="footer2">
+      <h4>Follow us</h4><br>
+      <i style="font-size:24px" class="fa">&#xf08c;</i><br><br>
+      <i style="font-size:24px" class="fa">&#xf082;</i><br><br>
+      <i style="font-size:24px" class="fa">&#xf16d;</i>
+    </div>
+  </div>
+  <script src="../static/js/home.js"></script>
+
+</body>
+
+</html>

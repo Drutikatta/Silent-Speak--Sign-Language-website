@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="img" href="../static/pics/silentspeak.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-SilentSpeak</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz_advan.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+
+    <img src="../static/pics/silentspeak.png" class="company-name">
+
+    <div class="pages">
+      <b><a href="/" class="page1">
+          <li>Home</li>
+        </a>
+        <a href="/learning" class="page2">
+          <li>Learning</li>
+        </a>
+        <a href="/history" class="page3">
+          <li>History</li>
+        </a>
+        <a href="/dictionary" class="page4">
+          <li>Dictionary</li>
+        </a>
+        <a href="/about" class="page5">
+          <li>About Us</li>
+        </a></b>
+
+    </div>
+    <div class="search-login">
+      <div class="su-box su-box-style-default" id="" style="border-color:#00378b;border-radius:0px">
+        <div class="su-box-title"
+            style="background-color:#016abe;color:#FFFFFF;border-top-left-radius:0px;border-top-right-radius:0px"></div>
+        <div class="su-box-content su-u-clearfix su-u-trim"
+            style="border-bottom-left-radius:0px;border-bottom-right-radius:0px">
+            <form data-min-no-for-search="1" data-result-box-max-height="400" data-form-id="5791"
+                class="is-search-form is-form-style is-form-style-1 is-form-id-5791 is-ajax-search"
+                action="https://indiansignlanguage.org/" method="get" role="search">
+                <label for="is-search-input-5791">
+                    <input
+                        type="search" id="is-search-input-5791" name="s" value="" class="is-search-input"
+                        placeholder="Search Indian Sign Language here......" autocomplete="off"
+                        style="z-index: 10; position: relative; background-color: rgb(217, 238, 255);">
+                        <span
+                        class="is-loader-image"
+                        style="background-image: url(https://indiansignlanguage.org/wp-content/plugins/add-search-to-menu/public/images/spinner.gif); right: 86.1125px; display: none;"></span></label><input
+                    type="submit" value="SEARCH" class="is-search-submit">
+                    <input type="hidden" name="id" value="5791">
+            </form>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn" style="font-size: 50px;"><i style="font-size:50px"
+          class="fa">&#xf2be;</i>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="/login">Login</a>
+          <a href="/signup">Sign up</a>
+        </div>
+    </div>
+  </nav>
+
+
+  <div id="quiz">
+    <div id="heading"></div>
+    <div><h1>Basic Sentences</h1></div>
+    <div id="score">Score: <span id="scoreValue">0</span></div>
+    <div id="progress"></div>
+    <div id="question"></div>
+    <div id="options"></div>
+    <div id="heading"></div>
+    
+    
+</div>
+
+
+  <div class="footer">
+    <br>
+    <h4 style="color: #f18b59; margin-left: 60px;">Expand your world learn a sign each day</h4>
+    <div class="footer1">
+      
+      <b><a href="/about">About</a><br>
+      <a href="/learning">Learning</a>
+      <a href="/beg">Beginner</a>
+      <a href="/inter">Intermediate</a>
+      <a href="/advan">Advanced</a><br>
+      <a href="/dictionary">Dictionary</a><br><br> <br>
+    </b>
+      <h3> @Copyright</h3>
+    </div>
+    <div class="footer2">
+      <h4>Follow us</h4><br>
+      <i style="font-size:24px" class="fa">&#xf08c;</i><br><br>
+      <i style="font-size:24px" class="fa">&#xf082;</i><br><br>
+      <i style="font-size:24px" class="fa">&#xf16d;</i>
+    </div>
+  </div>
+  <script src="../static/js/quiz_advan.js"></script>
+
+</body>
+
+</html>

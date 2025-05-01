@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-SilentSpeak</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+</head>
+<body>
+    <div class="main">
+        <h1>SilentSpeak</h1>
+        <h2>Enter your login credentials</h2>
+        <form action="" method="POST">
+            <label for="first">
+                  Username:
+              </label>
+            <input type="text"
+                   id="first"
+                   name="first"
+                   placeholder="Enter your Username" required>
+ 
+            <label for="password">
+                  Password:
+              </label>
+            <input type="password"
+                   id="password"
+                   name="password"
+                   placeholder="Enter your Password" required>
+ 
+            <div class="wrap">
+                <button type="submit"
+                        onclick="solve()"><a href="/" onclick= "alert('Login Successfull')"> Submit</a>
+                    
+                </button>
+            </div>
+        </form>
+        <p>Not registered? 
+              <a href="/signup"
+               style="text-decoration: none;">
+                Create an account
+            </a>
+            <a class="close" href="/">
+                <i style="font-size:24px" class="fa">&#xf00d;</i></a>
+            
+        </p>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="img" href="../pics/silentspeak.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-SilentSpeak</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/history.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+      <img src="../static/pics/silentspeak.png" class="company-name">
+        <div class="pages">
+            <b><a href="/" class="page1"><li>Home</li></a>
+                <a href="/learning" class="page2"><li>Learning</li></a>
+                <a href="/history" class="page3"><li>History</li></a>
+                <a href="/dictionary" class="page4"><li>Dictionary</li></a>
+                <a href="/about" class="page5"><li>About Us</li></a></b>
+        
+        </div>
+        <div class="search-login">
+          <div class="su-box su-box-style-default" id="" style="border-color:#00378b;border-radius:0px">
+            <div class="su-box-title"
+              style="background-color:#016abe;color:#FFFFFF;border-top-left-radius:0px;border-top-right-radius:0px"></div>
+            <div class="su-box-content su-u-clearfix su-u-trim"
+              style="border-bottom-left-radius:0px;border-bottom-right-radius:0px">
+              <form data-min-no-for-search="1" data-result-box-max-height="400" data-form-id="5791"
+                class="is-search-form is-form-style is-form-style-1 is-form-id-5791 is-ajax-search"
+                action="https://indiansignlanguage.org/" method="get" role="search">
+                <label for="is-search-input-5791">
+                  <input type="search" id="is-search-input-5791" name="s" value="" class="is-search-input"
+                    placeholder="Search Indian Sign Language here......" autocomplete="off"
+                    style="z-index: 10; position: relative; background-color: rgb(217, 238, 255);">
+                  <span class="is-loader-image"
+                    style="background-image: url(https://indiansignlanguage.org/wp-content/plugins/add-search-to-menu/public/images/spinner.gif); right: 86.1125px; display: none;"></span></label><input
+                  type="submit" value="SEARCH" class="is-search-submit">
+                <input type="hidden" name="id" value="5791">
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i style="font-size:50px" class="fa" >&#xf2be;</i>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="/login">Login</a>
+              <a href="/signup">Sign up</a>
+            </div>
+          </div>
+    </nav>
+
+
+    <div class="history">
+      <h1>History – Indian Sign Language Dictionary</h1>
+      <img src="../static/pics/history-1.jpg" width="300" height="240" >
+      <p class="p1">In January 1999, the Ramakrishna Mission embarked upon a very unique project in collaboration with CBM International, Germany – to standardize Indian Sign Language. November 24, 2001 became an important day for persons with hearing impairment in India. In an august gathering, the first ‘Indian Sign Language Dictionary’ was released. The Indian Sign Language Dictionary was an earnest attempt based on years of research, documenting over 2500 signs from 42 cities in 12 States to provide a common sign language code all over India. To complement the sign language dictionary, an instructional video pertaining to the signs was felt necessary as it is impossible to bring out the facial expressions, body movement and positions, etc., in a book form. 
+          </p>
+      <p class="p2">On 23 November 2002 the sign language instructional video developed and released.
+        Apart from this basic sign language dictionary, the Mission has released the technical sign language dictionary to enable hearing impaired students to pursue polytechnic education.
+        In collaboration with All India Deaf Bank Employees Association the Mission also brought out a Sign Language Dictionary on Banking Terminologies. We have also releases signs for Physics subjects taught in schools.
+        We are also developing signs for Mathematics, Chemistry and Zoology subjects.
+        In order to provide larger readership to the dictionary, the FDMSE is about to release a trilingual dictionary (English, Hindi and Tamil).
+        Please send your comments, if any, in case you want to get involved in the project.
+        Thank you.</p>
+  </div>
+
+  
+  <div class="footer">
+    <br>
+    <h4 style="color: #f18b59; margin-left: 60px;">Expand your world learn a sign each day</h4>
+    <div class="footer1">
+
+      <b><a href="/about">About</a><br>
+        <a href="/learning">Learning</a>
+        <a href="/beg">Beginner</a>
+        <a href="/inter">Intermediate</a>
+        <a href="/advan">Advanced</a><br>
+        <a href="/dictionary">Dictionary</a><br><br> <br>
+      </b>
+      <h3> @Copyright</h3>
+    </div>
+    <div class="footer2">
+      <h4>Follow us</h4><br>
+      <i style="font-size:24px" class="fa">&#xf08c;</i><br><br>
+      <i style="font-size:24px" class="fa">&#xf082;</i><br><br>
+      <i style="font-size:24px" class="fa">&#xf16d;</i>
+    </div>
+  </div>
+          
+          <script>
+           
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          </script>
+
+
+          
+</body>
+</html>
